@@ -3,4 +3,14 @@
 	 <color name="colorPrimary">#008577</color>
 	 <color name="colorPrimaryDark">#00574B</color>
 	 <color name="colorAccent">#D81B60</color>
+
+<!--	bottom nav-->
+	<color name="background_nav">#3A5C4E</color>
+    <color name="text_color_nav">#F2F1DF</color>
+	<color name="item_select_nav">#F2F1DF</color>
+	<color name="item_unselect_nav">#C0BC9F</color>
+
+<!--	ToolBar colors-->
+	<color name="background_Toolbar">#F2F1DF</color>
+	<color name="text_color_Toolbar">#3A5C4E</color>
 </resources>
