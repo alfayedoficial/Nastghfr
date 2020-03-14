@@ -13,4 +13,9 @@
 <!--	ToolBar colors-->
 	<color name="background_Toolbar">#F2F1DF</color>
 	<color name="text_color_Toolbar">#3A5C4E</color>
+
+<!--	Color Text-->
+	<color name="headerColor">#F2F1DF</color>
+	<color name="backgroundSpinner">#3A5C4E</color>
+	<color name="backgroundLayout">#A39771</color>
 </resources>
