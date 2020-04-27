@@ -1,6 +1,7 @@
 package com.alialfayed.nstghfr.viewModel
 
 import android.graphics.Typeface
+import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.ViewModel
 import com.alialfayed.nstghfr.R
 import com.alialfayed.nstghfr.view.activity.HomeActivity
@@ -18,19 +19,19 @@ import me.ibrahimsn.lib.OnItemSelectedListener
  */
 class HomeActivityViewModel(private var homeActivity: HomeActivity) : ViewModel() {
 
-    fun inflateContainer() {
+    fun inflateContainer(toolbar: Toolbar) {
         val fragmentTransaction = homeActivity.supportFragmentManager.beginTransaction()
-        fragmentTransaction.add(R.id.containerFrameLayout_HomeActivity, HomeFragment(homeActivity))
+        fragmentTransaction.add(R.id.containerFrameLayout_HomeActivity, HomeFragment(homeActivity,toolbar))
         fragmentTransaction.commit()
     }
 
-    fun onItemSelectedNav() {
+    fun onItemSelectedNav(toolbar: Toolbar) {
         homeActivity.bottomBar_HomeActivity.setOnItemSelectedListener(object : OnItemSelectedListener {
             override fun onItemSelect(pos: Int) {
                 when (pos) {
                     0 -> {
                         val fragmentTransaction =homeActivity.supportFragmentManager.beginTransaction()
-                        fragmentTransaction.replace(R.id.containerFrameLayout_HomeActivity,HomeFragment(homeActivity))
+                        fragmentTransaction.replace(R.id.containerFrameLayout_HomeActivity,HomeFragment(homeActivity , toolbar))
                         fragmentTransaction.commit()
                     }
                     1 -> {
@@ -55,6 +56,6 @@ class HomeActivityViewModel(private var homeActivity: HomeActivity) : ViewModel(
 
     fun inflateFont() {
         val typeFace = Typeface.createFromAsset(homeActivity.assets,"ayman15")!!
-        // TODO use this method to inflateFont
     }
+
 }

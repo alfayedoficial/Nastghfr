@@ -28,16 +28,24 @@
 
         <Spinner
             android:id="@+id/spinner_HomeFragment"
+            style="@style/spinnerItemStyle"
             android:layout_width="0dp"
             android:layout_height="55dp"
-            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/background_spinner"
             android:elevation="2dp"
+            android:gravity="center"
+            android:paddingStart="33dp"
+            android:paddingLeft="33dp"
+            android:spinnerMode="dropdown"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTitle_HomeFragment" />
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle_HomeFragment"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
 
         <Button
             android:id="@+id/btnSap7_HomeFragment"
@@ -48,13 +56,13 @@
             android:fontFamily="@font/ayman15"
             android:text="سبح الله"
             android:textColor="@color/backgroundSpinner"
-            android:textSize="30sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="@+id/spinner_HomeFragment"
             app:layout_constraintStart_toStartOf="@+id/spinner_HomeFragment"
             app:layout_constraintTop_toBottomOf="@+id/spinner_HomeFragment" />
 
         <Button
-            android:id="@+id/btnSap7_HomeFragment2"
+            android:id="@+id/btnTaspi7AfterSalah_HomeFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -62,7 +70,7 @@
             android:fontFamily="@font/ayman15"
             android:text="التسبيح بعد كل صلاة"
             android:textColor="@color/backgroundSpinner"
-            android:textSize="30sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="@+id/spinner_HomeFragment"
             app:layout_constraintStart_toStartOf="@+id/spinner_HomeFragment"
             app:layout_constraintTop_toBottomOf="@+id/btnSap7_HomeFragment" />
@@ -75,9 +83,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/btnSap7_HomeFragment2"
-            app:layout_constraintStart_toStartOf="@+id/btnSap7_HomeFragment2"
-            app:layout_constraintTop_toBottomOf="@+id/btnSap7_HomeFragment2">
+            app:layout_constraintEnd_toEndOf="@+id/btnTaspi7AfterSalah_HomeFragment"
+            app:layout_constraintStart_toStartOf="@+id/btnTaspi7AfterSalah_HomeFragment"
+            app:layout_constraintTop_toBottomOf="@+id/btnTaspi7AfterSalah_HomeFragment">
 
             <ImageButton
                 android:id="@+id/ImgBtnQu_HomeFragment"
@@ -112,7 +120,7 @@
                 android:gravity="center"
                 android:text="الإحصائيات"
                 android:textColor="@color/headerColor"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -120,9 +128,9 @@
             android:id="@+id/item_6_NotificationFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:background="@color/backgroundSpinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -162,7 +170,7 @@
                     android:gravity="center"
                     android:text="قائمة بترتيب أكثر المستخدمين إستغفار لله"
                     android:textColor="@color/headerColor"
-                    android:textSize="25sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -199,7 +207,7 @@
             android:gravity="center"
             android:text="إحصائيات الإستغفار"
             android:textColor="@color/headerColor"
-            android:textSize="25sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/item_6_NotificationFragment"
             app:layout_constraintStart_toStartOf="@+id/item_6_NotificationFragment"
@@ -226,7 +234,7 @@
                 android:gravity="center"
                 android:text="اليوم"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <View
@@ -237,7 +245,7 @@
                 android:background="@drawable/background_btn" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txtToday_HomeFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -245,7 +253,7 @@
                 android:gravity="center"
                 android:text="1"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -270,7 +278,7 @@
                 android:gravity="center"
                 android:text="الأسبوع"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <View
@@ -281,7 +289,7 @@
                 android:background="@drawable/background_btn" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/txtWeek_HomeFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -289,7 +297,7 @@
                 android:gravity="center"
                 android:text="100"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -313,7 +321,7 @@
                 android:gravity="center"
                 android:text="الشهر"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <View
@@ -324,7 +332,7 @@
                 android:background="@drawable/background_btn" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txtMonth_HomeFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -332,7 +340,7 @@
                 android:gravity="center"
                 android:text="500"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -344,7 +352,7 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/background_card"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/btnSap7_HomeFragment3"
+            app:layout_constraintBottom_toTopOf="@+id/btnAstghfrAllah_HomeFragment"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
             app:layout_constraintStart_toStartOf="@+id/linearLayout5"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
@@ -358,7 +366,7 @@
                 android:gravity="center"
                 android:text="الإجمالى"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <View
@@ -369,7 +377,7 @@
                 android:background="@drawable/background_btn" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/txtTotal_HomeFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -377,19 +385,32 @@
                 android:gravity="center"
                 android:text="1000"
                 android:textColor="@color/headerColor"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:elevation="2dp"
+            android:src="@drawable/ic_spinner"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_HomeFragment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner_HomeFragment" />
+
         <Button
-            android:id="@+id/btnSap7_HomeFragment3"
+            android:id="@+id/btnAstghfrAllah_HomeFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/background_btn"
             android:fontFamily="@font/ayman15"
             android:text="استغفر الأن"
             android:textColor="@color/backgroundSpinner"
-            android:textSize="30sp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
             app:layout_constraintStart_toStartOf="@+id/linearLayout7" />

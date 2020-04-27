@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="switch2">قيام الليل يرحمك الله \n
+    قال عليه الصلاة والسلام: عليكم بقيام الليل فإنه دأب الصالحين قبلكم\n وقربة إلى الله، ومكفرة للسيئات\n ومنهاة عن الإثم  ومطردة للداء عن الجسد
+    </string>
 </resources>
